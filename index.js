@@ -210,7 +210,10 @@ await import(tmpBot);
 
 
 
-
+const express = require('express');
+const app = express();
+app.get('/', (req,res)=>res.send('🐺 WOLFTECH ALIVE - 0746391559'));
+app.listen(process.env.PORT||10000, ()=>console.log('WOLFTECH ALIVE'));
 
 
 
